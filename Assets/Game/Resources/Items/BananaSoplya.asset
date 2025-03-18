@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BananaSoplya
   m_EditorClassIdentifier: 
   itemName: SoplyBananaEs
-  sprite: {fileID: -5606610821628028811, guid: c88d18d691d480f49800f19f6bb64881, type: 3}
+  sprite: {fileID: 1619260900646433778, guid: c88d18d691d480f49800f19f6bb64881, type: 3}
   description: sopelky s bananavoy pastoy obyedenye

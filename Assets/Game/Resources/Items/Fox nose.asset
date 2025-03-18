@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fox nose
   m_EditorClassIdentifier: 
   itemName: Fox Nose
-  sprite: {fileID: -5911176814359192492, guid: e2f3a62ec4000ab4aba69a2027cf9574, type: 3}
+  sprite: {fileID: 2600313748311387489, guid: e2f3a62ec4000ab4aba69a2027cf9574, type: 3}
   description: 'Lysy nyuhayut nosikom trusiki tishki
 
 '
