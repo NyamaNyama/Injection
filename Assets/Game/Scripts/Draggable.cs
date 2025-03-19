@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
-    private Vector3 offset; 
+    private Vector3 offset;
 
     private void OnMouseDown()
     {
