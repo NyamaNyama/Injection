@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9e4a026e471601f4684ed2113f1e7701
+guid: fbc13a8bc44614245b762c7065833cb9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7213871143714244634
-    second: Stol1_0
+      213: -1514817804222669470
+    second: "\u0421\u0442\u043E\u043B_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stol1_0
+      name: "\u0421\u0442\u043E\u043B_0"
       rect:
         serializedVersion: 2
-        x: 0
+        x: 502
         y: 0
-        width: 1920
-        height: 601
+        width: 4946
+        height: 464
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a184780a591dc1460800000000000000
-      internalID: 7213871143714244634
+      spriteID: 26ddedf9b394afae0800000000000000
+      internalID: -1514817804222669470
       vertices: []
       indices: 
       edges: []
