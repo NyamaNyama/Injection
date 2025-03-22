@@ -8,6 +8,8 @@ public class Draggable : MonoBehaviour
     private float dragStartTime;
     public static bool dragPenaltyActive = false;
     private bool dragDisabled = false;
+    public static bool invertedMouse = false;
+    private static Draggable currentDraggable;
 
     private void OnMouseDown()
     {
@@ -19,6 +21,7 @@ public class Draggable : MonoBehaviour
         offset = gameObject.transform.position - GetMouseWorldPos();
         isDragging = true;
         dragStartTime = Time.time;
+        currentDraggable = this;
     }
 
     private void OnMouseDrag()
@@ -36,6 +39,7 @@ public class Draggable : MonoBehaviour
     private void OnMouseUp()
     {
         isDragging = false;
+        currentDraggable = null;
     }
 
     private void StopDragging()
@@ -54,7 +58,23 @@ public class Draggable : MonoBehaviour
     private Vector3 GetMouseWorldPos()
     {
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.nearClipPlane;
+
+        if (invertedMouse)
+        {
+            mousePos.x = Screen.width - mousePos.x;
+            mousePos.y = Screen.height - mousePos.y;
+        }
+
+        mousePos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
+    public static void ForceRelease()
+    {
+        if (currentDraggable != null)
+        {
+            currentDraggable.isDragging = false;
+            currentDraggable = null;
+        }
     }
 }

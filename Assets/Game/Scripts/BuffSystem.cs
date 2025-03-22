@@ -12,15 +12,17 @@ public class BuffSystem : MonoBehaviour
     public Button applyBuffButton;
     public Volume blurEffect;
     public GameObject pinkGlassesOverlay;
+    public GameObject blackoutOverlay;
 
     private Dictionary<string, System.Action> buffs = new Dictionary<string, System.Action>();
-    private bool isDragPenaltyActive = false;
 
     private void Start()
     {
         buffs.Add("Плохое зрение", ApplyBlurEffect);
         buffs.Add("Розовые очки", ApplyPinkGlassesEffect);
         buffs.Add("Слабые руки", ApplyWeakHandsEffect);
+        buffs.Add("Инвертированная мышь", ApplyInvertedMouseEffect);
+        buffs.Add("Затемнение", ApplyBlackoutEffect);
 
         applyBuffButton.onClick.AddListener(ApplySelectedBuff);
     }
@@ -71,11 +73,7 @@ public class BuffSystem : MonoBehaviour
 
     private void ApplyWeakHandsEffect()
     {
-        if (!isDragPenaltyActive)
-        {
-            isDragPenaltyActive = true;
-            StartCoroutine(WeakHandsCoroutine());
-        }
+        StartCoroutine(WeakHandsCoroutine());
     }
 
     private IEnumerator WeakHandsCoroutine()
@@ -83,6 +81,35 @@ public class BuffSystem : MonoBehaviour
         Draggable.dragPenaltyActive = true;
         yield return new WaitForSeconds(30f);
         Draggable.dragPenaltyActive = false;
-        isDragPenaltyActive = false;
+    }
+
+    private void ApplyInvertedMouseEffect()
+    {
+        Draggable.invertedMouse = true;
+        StartCoroutine(DisableInvertedMouseEffect());
+    }
+
+    private IEnumerator DisableInvertedMouseEffect()
+    {
+        yield return new WaitForSeconds(15f);
+        Draggable.invertedMouse = false;
+        Draggable.ForceRelease();
+    }
+
+    private void ApplyBlackoutEffect()
+    {
+        if (blackoutOverlay != null)
+        {
+            blackoutOverlay.SetActive(true);
+            Invoke(nameof(DisableBlackoutEffect), 7f);
+        }
+    }
+
+    private void DisableBlackoutEffect()
+    {
+        if (blackoutOverlay != null)
+        {
+            blackoutOverlay.SetActive(false);
+        }
     }
 }
