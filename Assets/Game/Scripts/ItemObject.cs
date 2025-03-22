@@ -19,4 +19,9 @@ public class ItemObject : MonoBehaviour
             spriteRenderer.sprite = itemData.sprite;
         }
     }
+
+    public ItemData GetItemData()
+    {
+        return itemData;
+    }
 }
