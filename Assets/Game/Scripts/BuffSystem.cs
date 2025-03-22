@@ -3,33 +3,32 @@ using UnityEngine.UI;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using TMPro;
-using System.Collections.Generic;  // Добавлено пространство имен для Dictionary
+using System.Collections;
+using System.Collections.Generic;
 
 public class BuffSystem : MonoBehaviour
 {
-    public TMP_Dropdown buffDropdown; // Список с выбором баффов (используем TMP_Dropdown)
-    public Button applyBuffButton; // Кнопка "Применить"
-    public Volume blurEffect; // Пост-обработка для размытия
-    public GameObject pinkGlassesOverlay; // Объект для эффекта розовых очков
+    public TMP_Dropdown buffDropdown;
+    public Button applyBuffButton;
+    public Volume blurEffect;
+    public GameObject pinkGlassesOverlay;
 
-    private Dictionary<string, System.Action> buffs = new Dictionary<string, System.Action>(); // Используем Dictionary
+    private Dictionary<string, System.Action> buffs = new Dictionary<string, System.Action>();
+    private bool isDragPenaltyActive = false;
 
     private void Start()
     {
-        // Добавляем все баффы в список
         buffs.Add("Плохое зрение", ApplyBlurEffect);
         buffs.Add("Розовые очки", ApplyPinkGlassesEffect);
+        buffs.Add("Слабые руки", ApplyWeakHandsEffect);
 
-        // Подписываем кнопку на событие
-        applyBuffButton.onClick.AddListener(ApplySelectedBuff); // Подключаем метод к кнопке
+        applyBuffButton.onClick.AddListener(ApplySelectedBuff);
     }
 
-    public void ApplySelectedBuff()  // Изменено на public
+    public void ApplySelectedBuff()
     {
-        // Получаем выбранный бафф из Dropdown
         string selectedBuff = buffDropdown.options[buffDropdown.value].text;
 
-        // Применяем выбранный бафф
         if (buffs.ContainsKey(selectedBuff))
         {
             buffs[selectedBuff].Invoke();
@@ -41,7 +40,7 @@ public class BuffSystem : MonoBehaviour
         if (blurEffect != null)
         {
             blurEffect.enabled = true;
-            Invoke(nameof(DisableBlurEffect), 5f); // Размытие на 5 секунд
+            Invoke(nameof(DisableBlurEffect), 5f);
         }
     }
 
@@ -57,8 +56,8 @@ public class BuffSystem : MonoBehaviour
     {
         if (pinkGlassesOverlay != null)
         {
-            pinkGlassesOverlay.SetActive(true); // Включаем фильтр розовых очков
-            Invoke(nameof(DisablePinkGlassesEffect), 5f); // Отключаем эффект через 5 секунд
+            pinkGlassesOverlay.SetActive(true);
+            Invoke(nameof(DisablePinkGlassesEffect), 5f);
         }
     }
 
@@ -66,7 +65,24 @@ public class BuffSystem : MonoBehaviour
     {
         if (pinkGlassesOverlay != null)
         {
-            pinkGlassesOverlay.SetActive(false); // Отключаем фильтр розовых очков
+            pinkGlassesOverlay.SetActive(false);
         }
+    }
+
+    private void ApplyWeakHandsEffect()
+    {
+        if (!isDragPenaltyActive)
+        {
+            isDragPenaltyActive = true;
+            StartCoroutine(WeakHandsCoroutine());
+        }
+    }
+
+    private IEnumerator WeakHandsCoroutine()
+    {
+        Draggable.dragPenaltyActive = true;
+        yield return new WaitForSeconds(30f);
+        Draggable.dragPenaltyActive = false;
+        isDragPenaltyActive = false;
     }
 }

@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class MixingStation : MonoBehaviour
 {
+    private Dictionary<HashSet<ItemData>, ItemData> mixingRecipes = new Dictionary<HashSet<ItemData>, ItemData>(HashSetComparer.Instance);
+
     [System.Serializable]
     public class MixingRecipe
     {
@@ -11,18 +13,23 @@ public class MixingStation : MonoBehaviour
         public ItemData result;
     }
 
-    public List<MixingRecipe> mixingRecipes = new List<MixingRecipe>();
+    public List<MixingRecipe> recipesList = new List<MixingRecipe>();
 
-    // Метод для смешивания двух предметов
-    public ItemData Mix(ItemData item1, ItemData item2)
+    private void Awake()
     {
-        foreach (var recipe in mixingRecipes)
+        foreach (var recipe in recipesList)
         {
-            if ((recipe.itemA == item1 && recipe.itemB == item2) || (recipe.itemA == item2 && recipe.itemB == item1))
+            var key = new HashSet<ItemData> { recipe.itemA, recipe.itemB };
+            if (!mixingRecipes.ContainsKey(key))
             {
-                return recipe.result;
+                mixingRecipes.Add(key, recipe.result);
             }
         }
-        return null;
+    }
+
+    public ItemData Mix(ItemData item1, ItemData item2)
+    {
+        var key = new HashSet<ItemData> { item1, item2 };
+        return mixingRecipes.TryGetValue(key, out var result) ? result : null;
     }
 }

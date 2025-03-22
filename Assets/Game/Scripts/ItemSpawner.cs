@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    public GameObject itemPrefab; // Префаб предмета
-    public Transform spawnPoint;  // Точка появления
+    public GameObject itemPrefab; 
+    public Transform spawnPoint;  
 
     public void SpawnItem(ItemData itemData)
     {

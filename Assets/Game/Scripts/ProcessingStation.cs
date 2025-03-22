@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ProcessingStation : MonoBehaviour
 {
+    private Dictionary<ItemData, ItemData> processingRules = new Dictionary<ItemData, ItemData>();
+
     [System.Serializable]
     public class ProcessingRule
     {
@@ -10,18 +12,21 @@ public class ProcessingStation : MonoBehaviour
         public ItemData outputItem;
     }
 
-    public List<ProcessingRule> processingRules = new List<ProcessingRule>();
+    public List<ProcessingRule> rulesList = new List<ProcessingRule>();
 
-    // Обрабатывает предмет и возвращает новый
-    public ItemData Process(ItemData item)
+    private void Awake()
     {
-        foreach (var rule in processingRules)
+        foreach (var rule in rulesList)
         {
-            if (rule.inputItem == item)
+            if (!processingRules.ContainsKey(rule.inputItem))
             {
-                return rule.outputItem;
+                processingRules.Add(rule.inputItem, rule.outputItem);
             }
         }
-        return null;
+    }
+
+    public ItemData Process(ItemData item)
+    {
+        return processingRules.TryGetValue(item, out var outputItem) ? outputItem : null;
     }
 }

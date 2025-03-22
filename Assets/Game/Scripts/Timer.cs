@@ -1,11 +1,11 @@
-using TMPro;  // ƒл€ использовани€ TextMeshPro
+using TMPro;  
 using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
     public float timeLimit = 10f;
     private float timeRemaining;
-    public TextMeshProUGUI timerText;  // Ёто поле должно быть публичным
+    public TextMeshProUGUI timerText;  
 
     void Start()
     {

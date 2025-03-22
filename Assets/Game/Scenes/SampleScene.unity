@@ -314,7 +314,7 @@ MonoBehaviour:
         m_MethodName: SpawnItem
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: bca918c50a1e7904782e68b9bceaee49, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: e5adcb3575ca20842801d4c526f5d4a4, type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -607,7 +607,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5999999, g: 0.5999999, b: 0.5999999, a: 1}
+  m_Color: {r: 0.5999999, g: 0.5999999, b: 0.5999999, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -626,7 +626,7 @@ Transform:
   m_GameObject: {fileID: 190083833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.134, y: -1.548, z: 0}
+  m_LocalPosition: {x: 0, y: -3.47, z: 0}
   m_LocalScale: {x: 100, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1480,11 +1480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499aaf262b83c044dbd9a168a64abdc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  processingRules:
-  - inputItem: {fileID: 11400000, guid: 51c524cc9bb0fd740aca559f9cf8d224, type: 2}
-    outputItem: {fileID: 11400000, guid: 691bc989f5b311e46a954526e3b18165, type: 2}
-  - inputItem: {fileID: 11400000, guid: bca918c50a1e7904782e68b9bceaee49, type: 2}
-    outputItem: {fileID: 11400000, guid: 6fca2653d6247374bab1eb32ef292fe1, type: 2}
+  rulesList: []
 --- !u!4 &763833733
 Transform:
   m_ObjectHideFlags: 0
@@ -2073,7 +2069,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925140039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2350,6 +2346,9 @@ MonoBehaviour:
     - m_Text: "\u0420\u043E\u0437\u043E\u0432\u044B\u0435 \u043E\u0447\u043A\u0438"
       m_Image: {fileID: 0}
       m_Color: {r: 0, g: 0, b: 0, a: 0}
+    - m_Text: "\u0421\u043B\u0430\u0431\u044B\u0435 \u0440\u0443\u043A\u0438"
+      m_Image: {fileID: 0}
+      m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2530,10 +2529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113df0357900d6c428ea44d6c2adf9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixingRecipes:
-  - itemA: {fileID: 11400000, guid: 691bc989f5b311e46a954526e3b18165, type: 2}
-    itemB: {fileID: 11400000, guid: 6fca2653d6247374bab1eb32ef292fe1, type: 2}
-    result: {fileID: 11400000, guid: ba270cf01f46c1546ac68765fde6e2d3, type: 2}
+  recipesList: []
 --- !u!4 &1626432233
 Transform:
   m_ObjectHideFlags: 0
