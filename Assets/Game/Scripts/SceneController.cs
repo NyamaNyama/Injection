@@ -7,7 +7,7 @@ public class SceneController : MonoBehaviour
 {
     public static SceneController instance;
     [SerializeField] private Animator transitionAnim;
-
+    [SerializeField] private AudioClip gameMusic;
     private void Awake()
     {
         if (instance == null)
@@ -32,6 +32,7 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadSceneAsync("Game");
         transitionAnim.SetTrigger("End");
+        SoundFXManager.instance.PlayMusic(gameMusic,0.2f);
     }
     
     
