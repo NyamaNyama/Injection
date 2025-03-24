@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private AudioClip MenuMusic;
+    [SerializeField] private AudioClip menuMusic;
 
-    private void Awake()
+    private void Start()
     {
-        SoundFXManager.instance.PlayMusic(MenuMusic);
+        SoundFXManager.instance.PlayMusic(menuMusic);
     }
 
     public void Play()
