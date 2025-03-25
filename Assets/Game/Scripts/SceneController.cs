@@ -30,7 +30,21 @@ public class SceneController : MonoBehaviour
     {
         transitionAnim.SetTrigger("Start");
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadSceneAsync("Game");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Game");
+        asyncLoad.allowSceneActivation = false;
+        
+        while (!asyncLoad.isDone)
+        {
+            if (asyncLoad.progress >= 0.9f)
+            {
+                break;
+            }
+            yield return null;
+        }
+        
+        asyncLoad.allowSceneActivation = true;
+        
+        yield return new WaitUntil(() => asyncLoad.isDone);
         transitionAnim.SetTrigger("End");
         SoundFXManager.instance.PlayMusic(gameMusic,0.2f);
     }
