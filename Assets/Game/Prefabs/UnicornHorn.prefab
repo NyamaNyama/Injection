@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3256994657853095678}
   - component: {fileID: -7435259860539796291}
   - component: {fileID: 3814699609108426703}
-  - component: {fileID: 2324190395273502665}
+  - component: {fileID: 483335458461736854}
   m_Layer: 6
-  m_Name: GhostItem
+  m_Name: UnicornHorn
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,12 +81,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 37617837205840306, guid: 394c6509258c707429d9c9dd6daa8956, type: 3}
+  m_Sprite: {fileID: 5788597635829599733, guid: cdbf8e34cc53ec84f826fb720936f13e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.754, y: 1.742}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -157,8 +157,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
+    oldSize: {x: 1.754, y: 1.742}
+    newSize: {x: 1.754, y: 1.742}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ae5cb4980394843869574527685385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2324190395273502665
+--- !u!114 &483335458461736854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,7 +198,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2692665190787482260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f739c7fe53a4ef6bee02819a2acac86, type: 3}
+  m_Script: {fileID: 11500000, guid: d44f832eedd94c2db2e987d61b8f6fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ghostLifeTime: 5
+  spritesList:
+  - {fileID: -7481242577757738621, guid: 48a089660a2f62b42a045b68ce8b7aad, type: 3}
+  - {fileID: -3072890485023590910, guid: d7e1c6baa367fe54984c366485ba3f1a, type: 3}
+  - {fileID: -8522828556665875765, guid: 79e8c537e4fb3d8449558e06756c611d, type: 3}
+  - {fileID: 37617837205840306, guid: 394c6509258c707429d9c9dd6daa8956, type: 3}
+  - {fileID: -7271028994220433976, guid: d6e57524044e47848bf6d23c6cc09032, type: 3}
+  - {fileID: -6685751729324177682, guid: 228b3c627ba07484e87abe74f04f34b5, type: 3}
+  - {fileID: 7794937939696723503, guid: 7b0e680dac98bd74ebd44250064db95b, type: 3}
+  - {fileID: 5788597635829599733, guid: cdbf8e34cc53ec84f826fb720936f13e, type: 3}
+  - {fileID: 8388172772920294091, guid: a277755b4ae9071428afc75cab5ff6bd, type: 3}
+  - {fileID: -1162341970017346575, guid: 3d09c08e0851cf843b56987ee680d28d, type: 3}
+  - {fileID: 9044358672589626209, guid: e7dabd605b393c544ad6f2e831a9a794, type: 3}
+  changeCooldown: 1.5
+  changeRange: 2
+  itemLayer:
+    serializedVersion: 2
+    m_Bits: 64
