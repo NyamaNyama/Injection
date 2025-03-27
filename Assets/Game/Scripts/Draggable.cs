@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Game.Scripts;
 
 public class Draggable : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class Draggable : MonoBehaviour
         {
             return;
         }
-
+        CursorManager.instance.SetDragCursor(true);
         offset = gameObject.transform.position - GetMouseWorldPos();
         isDragging = true;
         dragStartTime = Time.time;
@@ -38,6 +39,7 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseUp()
     {
+        CursorManager.instance.SetDragCursor(false);
         isDragging = false;
         currentDraggable = null;
     }

@@ -24,7 +24,6 @@ namespace Game.Scripts
             {
                 activeItems.Add(Instantiate(spawnObject, _spawnPos, Quaternion.identity));
             }
-            
         }
     }
 } 
