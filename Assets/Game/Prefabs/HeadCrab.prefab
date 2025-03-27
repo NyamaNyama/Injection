@@ -204,3 +204,4 @@ MonoBehaviour:
   jumpCooldown: 2
   maxJumpHeight: 10
   maxJumpLength: 5
+  headCrabAudio: {fileID: 8300000, guid: 0909badf1dd617c4b9c24cff91948a4c, type: 3}

@@ -9,6 +9,7 @@ namespace Game.Scripts.ItemBehavior
         [SerializeField] private float jumpCooldown;
         [SerializeField] private float maxJumpHeight;
         [SerializeField] private float maxJumpLength;
+        [SerializeField] private AudioClip headCrabAudio;
         private Rigidbody2D _rb;
         private float _time;
 
@@ -31,6 +32,7 @@ namespace Game.Scripts.ItemBehavior
 
         private void Jump()
         {
+            SoundFXManager.instance.PlaySoundFXClip(headCrabAudio,transform,0.5f);
             _rb.AddForce(new Vector2(UnityEngine.Random.Range(-maxJumpLength, maxJumpLength)
                 ,UnityEngine.Random.Range(0, maxJumpHeight)),ForceMode2D.Impulse);
         }
