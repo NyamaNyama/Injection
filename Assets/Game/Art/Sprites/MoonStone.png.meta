@@ -137,12 +137,12 @@ TextureImporter:
       name: MoonStone_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 66
-        width: 859
-        height: 752
+        x: 8
+        y: 70
+        width: 897
+        height: 795
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,165 +155,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: MoonStone_1
-      rect:
-        serializedVersion: 2
-        x: 446
-        y: 791
-        width: 65
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af85db7a6620b5630800000000000000
-      internalID: 3916726940852902138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoonStone_2
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 769
-        width: 51
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 664c4693e3ab42ac0800000000000000
-      internalID: -3880772202472881050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoonStone_3
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 690
-        width: 111
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ea0520c8c79462b0800000000000000
-      internalID: -5592177948814406939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoonStone_4
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 363
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f4ef95c31989eb10800000000000000
-      internalID: 2011289426610611443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoonStone_5
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 128
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: de697de8b8f3a2f50800000000000000
-      internalID: 6857363251254499053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoonStone_6
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 125
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ee468afec5912150800000000000000
-      internalID: 5846118507502522086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoonStone_7
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 126
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 35ffb3cdadcdb43e0800000000000000
-      internalID: -2068316771290710189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 72836174888bf6e4fbe33c302c23e61a
     internalID: 0
     vertices: []
     indices: 
