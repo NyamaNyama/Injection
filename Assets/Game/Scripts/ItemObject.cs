@@ -1,3 +1,5 @@
+using System;
+using Game.Scripts;
 using UnityEngine;
 
 public class ItemObject : MonoBehaviour
@@ -23,5 +25,10 @@ public class ItemObject : MonoBehaviour
     public ItemData GetItemData()
     {
         return itemData;
+    }
+
+    private void OnDestroy()
+    {
+        ItemFromHeap.activeItems.Remove(this);
     }
 }
