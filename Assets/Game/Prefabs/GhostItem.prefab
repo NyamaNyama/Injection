@@ -529,7 +529,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21fd86b193bcaea46bd6e84e2947fd24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemData: {fileID: 0}
   description: {fileID: 1128807876066467466}
+  isLocked: 0
 --- !u!114 &3814699609108426703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,6 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ae5cb4980394843869574527685385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wasDrop: 0
 --- !u!114 &2324190395273502665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f739c7fe53a4ef6bee02819a2acac86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ghostLifeTime: 5
+  ghostLifeTime: 10
 --- !u!1 &6215847646417022064
 GameObject:
   m_ObjectHideFlags: 0

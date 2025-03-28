@@ -3,18 +3,16 @@ using UnityEngine;
 
 public class MixingStation : MonoBehaviour
 {
-    private Dictionary<HashSet<ItemData>, ItemData> mixingRecipes = new Dictionary<HashSet<ItemData>, ItemData>(HashSetComparer.Instance);
-
     [System.Serializable]
-    public class MixingRecipe
+    public class CraftingRecipe
     {
         public ItemData itemA;
         public ItemData itemB;
-        public ItemData result;
+        public ItemObject result;
     }
-
-    public List<MixingRecipe> recipesList = new List<MixingRecipe>();
-
+    private Dictionary<HashSet<ItemData>, ItemObject> mixingRecipes = new Dictionary<HashSet<ItemData>, ItemObject>(HashSetComparer.Instance);
+    
+    public List<CraftingRecipe> recipesList = new List<CraftingRecipe>();
     private void Awake()
     {
         foreach (var recipe in recipesList)
@@ -27,7 +25,7 @@ public class MixingStation : MonoBehaviour
         }
     }
 
-    public ItemData Mix(ItemData item1, ItemData item2)
+    public ItemObject GetRecipeResult(ItemData item1, ItemData item2)
     {
         var key = new HashSet<ItemData> { item1, item2 };
         return mixingRecipes.TryGetValue(key, out var result) ? result : null;

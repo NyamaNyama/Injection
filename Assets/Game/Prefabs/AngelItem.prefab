@@ -118,7 +118,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7794937939696723503, guid: 7b0e680dac98bd74ebd44250064db95b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -215,7 +215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21fd86b193bcaea46bd6e84e2947fd24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: 8e4e8060314e1534bbabee0110534bbf, type: 2}
   description: {fileID: 4305273030409030562}
+  isLocked: 0
 --- !u!114 &3814699609108426703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf3d6ed4422a2849bad3b0ba24d352f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpeed: 2
+  flySpeed: 1
 --- !u!1 &3907513792871130904
 GameObject:
   m_ObjectHideFlags: 0
