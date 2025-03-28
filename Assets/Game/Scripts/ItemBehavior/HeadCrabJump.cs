@@ -12,9 +12,11 @@ namespace Game.Scripts.ItemBehavior
         [SerializeField] private AudioClip headCrabAudio;
         private Rigidbody2D _rb;
         private float _time;
+        private SpriteRenderer _sprite;
 
         private void Start()
         {
+            _sprite = GetComponent<SpriteRenderer>();
             _time = jumpCooldown;
             _rb = GetComponent<Rigidbody2D>();
         }
@@ -32,9 +34,20 @@ namespace Game.Scripts.ItemBehavior
 
         private void Jump()
         {
+            float coordX = UnityEngine.Random.Range(-maxJumpLength, maxJumpLength);
+            float coordY = UnityEngine.Random.Range(0, maxJumpHeight);
+            
+            if (coordX > 0)
+            {
+                _sprite.flipX = true;
+            }
+            else
+            {
+                _sprite.flipX = false;
+            }
+            
             SoundFXManager.instance.PlaySoundFXClip(headCrabAudio,transform,0.5f);
-            _rb.AddForce(new Vector2(UnityEngine.Random.Range(-maxJumpLength, maxJumpLength)
-                ,UnityEngine.Random.Range(0, maxJumpHeight)),ForceMode2D.Impulse);
+            _rb.AddForce(new Vector2(coordX,coordY),ForceMode2D.Impulse);
         }
     }
 }
