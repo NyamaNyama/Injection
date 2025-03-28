@@ -10,7 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2692665190787482260, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_Name
-      value: ItemPrefab Variant 2
+      value: Homuncul
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1240637
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.18796813
       objectReference: {fileID: 0}
     - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -50,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6387479245842989679, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6387479245842989679, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_LocalPosition.y

@@ -13,6 +13,22 @@ PrefabInstance:
       value: NetherPortal Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9519074
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0966866
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}

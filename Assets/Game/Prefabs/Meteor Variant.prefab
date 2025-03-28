@@ -13,6 +13,22 @@ PrefabInstance:
       value: Meteor Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2289667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Size.y
+      value: 0.95228803
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00000008940697
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.00846988
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -54,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6387479245842989679, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.732
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6387479245842989679, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_LocalPosition.z
