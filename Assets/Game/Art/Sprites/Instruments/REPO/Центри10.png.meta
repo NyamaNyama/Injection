@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 47be03777c40a41478d661adc74705d5
+guid: 7160273edeb4f3d43985fcc948d5ab6e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 479624534153965649
-    second: GrelkaOn_0
+      213: -454556297054342472
+    second: "\u0426\u0435\u043D\u0442\u0440\u043810_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrelkaOn_0
+      name: "\u0426\u0435\u043D\u0442\u0440\u043810_0"
       rect:
         serializedVersion: 2
-        x: 643
-        y: 297
-        width: 369
-        height: 548
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 519
+        y: 173
+        width: 603
+        height: 401
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1503fcff8f7f7a600800000000000000
-      internalID: 479624534153965649
+      spriteID: 8b2b8a7c47711b9f0800000000000000
+      internalID: -454556297054342472
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4990e261eb9af094796e2722a55ae301
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GrelkaOn_0: 479624534153965649
+      "\u0426\u0435\u043D\u0442\u0440\u043810_0": -454556297054342472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

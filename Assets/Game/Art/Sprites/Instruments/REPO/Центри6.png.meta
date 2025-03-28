@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 1ecead8df71d65e4bbfa8ed3320a8216
+guid: 88ef31cf65de1b645a8c27c2b7046057
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 193119284009381762
-    second: GrelkaOffSklyanka_0
-  - first:
-      213: -3407994731692273838
-    second: GrelkaOffSklyanka_1
+      213: 727565699472298324
+    second: "\u0426\u0435\u043D\u0442\u0440\u04386_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrelkaOffSklyanka_0
+      name: "\u0426\u0435\u043D\u0442\u0440\u04386_0"
       rect:
         serializedVersion: 2
-        x: 630
-        y: 297
-        width: 385
-        height: 594
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 519
+        y: 173
+        width: 603
+        height: 401
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28f28a237f81ea200800000000000000
-      internalID: 193119284009381762
+      spriteID: 4511ecb1625d81a00800000000000000
+      internalID: 727565699472298324
       vertices: []
       indices: 
       edges: []
@@ -141,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 617405b63df78734bb8aeb3eacac263c
+    spriteID: eac615efee72b0649bdf36fd89fb9647
     internalID: 0
     vertices: []
     indices: 
@@ -151,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GrelkaOffSklyanka_0: 193119284009381762
-      GrelkaOffSklyanka_1: -3407994731692273838
-      GrelkaOffSklyanka_2: 244396863
+      "\u0426\u0435\u043D\u0442\u0440\u04386_0": 727565699472298324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

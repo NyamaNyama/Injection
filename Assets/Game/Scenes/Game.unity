@@ -2677,7 +2677,7 @@ SpriteRenderer:
   m_Size: {x: 3.85, y: 5.94}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &670703029
@@ -4753,6 +4753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1086713955}
   - component: {fileID: 1086713954}
+  - component: {fileID: 1086713956}
   m_Layer: 0
   m_Name: Centryfuga_0
   m_TagString: Untagged
@@ -4804,7 +4805,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3903860536092863483, guid: 3dec1a4cc5e546e47bf40a8017105f63, type: 3}
+  m_Sprite: {fileID: 1325199782213100041, guid: c502262644e2c624cb6d4ca0c6ed654d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4824,12 +4825,34 @@ Transform:
   m_GameObject: {fileID: 1086713953}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.2445974, y: 3.4562395, z: 0}
+  m_LocalPosition: {x: 3.79, y: 0.95, z: 0}
   m_LocalScale: {x: 0.72694093, y: 0.8870822, z: 0.6324386}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1547080597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1086713956
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086713953}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f53257460b7241144a55213b6375feec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1122977856
 GameObject:
   m_ObjectHideFlags: 0
