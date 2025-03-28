@@ -1,69 +1,54 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CraftingArea : MonoBehaviour
 {
-    public MixingStation mixingStation; 
-    public ItemSpawner itemSpawner; 
+    public InputArea slot1;
+    public InputArea slot2;
+    public Transform outputSpawnPoint;
+    public MixingStation mixingStation;
+    //public ItemSpawner itemSpawner;
     public GameObject craftButton;
+    public Animator craftingAnimator;
+    public float craftDelay = 1.5f;
 
-    private List<ItemObject> itemsInArea = new List<ItemObject>();  
-    private bool isCraftingInProgress = false; 
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Item")) 
-        {
-            ItemObject itemObject = other.GetComponent<ItemObject>();
-            if (itemObject != null)
-            {
-                itemsInArea.Add(itemObject); 
-            }
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Item"))
-        {
-            ItemObject itemObject = other.GetComponent<ItemObject>();
-            if (itemObject != null)
-            {
-                itemsInArea.Remove(itemObject); 
-            }
-        }
-    }
-
-    public void CraftItems()
+    private bool isCraftingInProgress = false;
+    public void OnCraftButtonPressed()
     {
         if (isCraftingInProgress)
             return;
-
-        if (itemsInArea.Count != 2)
+        
+        if (slot1.currentItem == null || slot2.currentItem == null)
         {
-            Debug.Log("Нужно два предмета для крафта!");
+            Debug.Log("РќРµРѕР±С…РѕРґРёРјРѕ СЂР°Р·РјРµСЃС‚РёС‚СЊ 2 РїСЂРµРґРјРµС‚Р° РґР»СЏ РєСЂР°С„С‚Р°!");
             return;
         }
 
+        StartCoroutine(ProcessCraft());
+    }
+
+    private IEnumerator ProcessCraft()
+    {
         isCraftingInProgress = true;
+        
+        ItemObject resultPrefab = mixingStation.GetRecipeResult(
+            slot1.currentItem.GetItemData(), 
+            slot2.currentItem.GetItemData()
+        );
 
-        ItemObject item1 = itemsInArea[0];
-        ItemObject item2 = itemsInArea[1];
-
-        ItemData result = mixingStation.Mix(item1.GetItemData(), item2.GetItemData()); 
-
-        if (result != null)
+        if (resultPrefab != null)
         {
-            Destroy(item1.gameObject);
-            Destroy(item2.gameObject);
-
-            itemSpawner.SpawnItem(result);
-
-            itemsInArea.Clear();
+            Destroy(slot1.currentItem.gameObject);
+            Destroy(slot2.currentItem.gameObject);
+            
+            Instantiate(resultPrefab.gameObject, outputSpawnPoint.position, Quaternion.identity);
+            
+            yield return new WaitForSeconds(craftDelay);
         }
         else
         {
-            Debug.Log("Рецепт не найден для этих предметов.");
+            Debug.Log("Invalid recipe!");
         }
 
         isCraftingInProgress = false;

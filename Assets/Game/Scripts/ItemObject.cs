@@ -5,42 +5,36 @@ using UnityEngine.EventSystems;
 
 public class ItemObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private SpriteRenderer spriteRenderer;
-    [SerializeField] private GameObject description;
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        description.SetActive(true);
-    }
+    [SerializeField] private ItemData itemData;
+    [SerializeField] private GameObject description; 
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        description.SetActive(false);
-    }
-
-    private ItemData itemData;
-
-    private void Awake()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
-    public void SetItemData(ItemData newItemData)
-    {
-        itemData = newItemData;
-
-        if (spriteRenderer != null && itemData != null)
-        {
-            spriteRenderer.sprite = itemData.sprite;
-        }
-    }
+    public bool isLocked = false;
+    
 
     public ItemData GetItemData()
     {
         return itemData;
     }
 
-    private void OnDestroy()
+    public void LockItem()
     {
-        ItemFromHeap.activeItems.Remove(this);
+        isLocked = true;
+        Draggable draggable = GetComponent<Draggable>();
+        if (draggable != null)
+        {
+            draggable.enabled = false;
+        }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (description != null)
+            description.SetActive(true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (description != null)
+            description.SetActive(false);
     }
 }
