@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace Game.Scripts
 {
-    public class ItemFromHeap : MonoBehaviour, IPointerClickHandler
+    public class ItemFromHeap : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,IPointerExitHandler
     {
         [SerializeField] private ItemObject spawnObject;
         private Vector2 _spawnPos;
@@ -24,6 +24,16 @@ namespace Game.Scripts
             {
                 activeItems.Add(Instantiate(spawnObject, _spawnPos, Quaternion.identity));
             }
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            CursorManager.instance.SetInteractionCursor(true);
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            CursorManager.instance.SetInteractionCursor(false);
         }
     }
 } 

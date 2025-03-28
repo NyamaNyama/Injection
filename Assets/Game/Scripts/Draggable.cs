@@ -11,7 +11,7 @@ public class Draggable : MonoBehaviour
     private bool dragDisabled = false;
     public static bool invertedMouse = false;
     private static Draggable currentDraggable;
-
+    
     private void OnMouseDown()
     {
         if (dragPenaltyActive && dragDisabled)

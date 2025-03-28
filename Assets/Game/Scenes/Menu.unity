@@ -3727,9 +3727,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69bf24bb63eb4b5ca5e77312973520a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultCursor: {fileID: 2800000, guid: 5265d5f3a0808054dbd4d0d8373979ac, type: 3}
-  clickCursor: {fileID: 0}
-  dragCursor: {fileID: 2800000, guid: a039527a0870bc64084e4ac3fe4c6797, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 90ed26446e5c85f45a853b3314f4e23d, type: 3}
+  clickCursor: {fileID: 2800000, guid: fd39d844f623fb0449b512d84052db7d, type: 3}
+  dragCursor: {fileID: 2800000, guid: c3d396e1eb092a145bca88f165e17ff8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

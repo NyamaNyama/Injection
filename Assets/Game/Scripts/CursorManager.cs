@@ -30,7 +30,7 @@ namespace Game.Scripts
             _hotspot = new Vector2(defaultCursor.width / 2, defaultCursor.height / 2);
         }
 
-        public void SetInterationCursor(bool isInteracting)
+        public void SetInteractionCursor(bool isInteracting)
         {
             if (isInteracting)
             {
