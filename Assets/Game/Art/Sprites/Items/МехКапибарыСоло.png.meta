@@ -1,10 +1,43 @@
 fileFormatVersion: 2
-guid: 79e8c537e4fb3d8449558e06756c611d
+guid: ccb529ffbb3629147964e84437a9fdd7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8522828556665875765
-    second: LegsAmongUs_0
+      213: 5969890741298980852
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_0"
+  - first:
+      213: 8925149137921640972
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_1"
+  - first:
+      213: -5013934991838977968
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_2"
+  - first:
+      213: -7849986334030387953
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_3"
+  - first:
+      213: 7092607825768680176
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_4"
+  - first:
+      213: -559649254514963110
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_5"
+  - first:
+      213: -5286842890755649543
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_6"
+  - first:
+      213: 8627687339293773965
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_7"
+  - first:
+      213: 6549975615746701960
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_8"
+  - first:
+      213: -4451766526948725204
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_9"
+  - first:
+      213: -8398484729745875515
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_10"
+  - first:
+      213: -7216382002621479466
+    second: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_11"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +146,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LegsAmongUs_0
+      name: "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_0"
       rect:
         serializedVersion: 2
-        x: 75
-        y: 237
-        width: 877
-        height: 397
+        x: 270
+        y: 101
+        width: 599
+        height: 441
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc210666594d8b980800000000000000
-      internalID: -8522828556665875765
+      spriteID: 4f7e407dfff49d250800000000000000
+      internalID: 5969890741298980852
       vertices: []
       indices: 
       edges: []
@@ -138,7 +171,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d8e4674069b6dc9499c40932d7df6f44
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +181,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LegsAmongUs_0: -8522828556665875765
+      "\u041C\u0435\u0445\u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B\u0421\u043E\u043B\u043E_0": 5969890741298980852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

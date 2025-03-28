@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2692665190787482260, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_Name
-      value: ItemPrefab Variant 1
+      value: Capybara
       objectReference: {fileID: 0}
     - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -42,7 +42,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625344057085559693, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_text
-      value: "\u0411\u0430\u043D\u043A\u0430 \u043C\u0435\u0445\u0430 \u043A\u0430\u043F\u0438\u0431\u0430\u0440\u044B"
+      value: "\u041C\u0435\u0445 \u041A\u0430\u043F\u0438\u0431\u0430\u0440\u044B
+        \u0432 \u0411\u0430\u043D\u043A\u0435"
       objectReference: {fileID: 0}
     - target: {fileID: 5478875972774254483, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -120,5 +121,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2692665190787482260, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4625407119293595061}
   m_SourcePrefab: {fileID: 100100000, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+--- !u!1 &4877022575744649587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2692665190787482260, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+  m_PrefabInstance: {fileID: 7417690858174057447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4625407119293595061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877022575744649587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e531e508f5464f34b91755c02ffd2d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capybaraFur: {fileID: 1157235562673741050, guid: 0960cfbfb7c51484fa91fe094826ab89, type: 3}
+  capybaraFall: {fileID: 5908836638248281128}
+  heightForBreak: 3.5
+  breakGlass: {fileID: 8300000, guid: a61f0c0571f4a7b4c80ce0e8e26412b0, type: 3}
+--- !u!114 &5908836638248281128 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3814699609108426703, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+  m_PrefabInstance: {fileID: 7417690858174057447}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877022575744649587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3ae5cb4980394843869574527685385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

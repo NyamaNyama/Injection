@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Game.Scripts;
+using UnityEngine.Serialization;
 
 public class Draggable : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Draggable : MonoBehaviour
     private bool dragDisabled = false;
     public static bool invertedMouse = false;
     private static Draggable currentDraggable;
+    [HideInInspector] public bool wasDrop = false;
     
     private void OnMouseDown()
     {
@@ -39,6 +41,7 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseUp()
     {
+        wasDrop = true;
         CursorManager.instance.SetDragCursor(false);
         isDragging = false;
         currentDraggable = null;

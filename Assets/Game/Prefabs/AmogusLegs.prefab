@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 9016515734268072222}
     - target: {fileID: 2692665190787482260, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_Name
-      value: ItemPrefab Variant
+      value: AmogusLegs
       objectReference: {fileID: 0}
     - target: {fileID: 3256994657853095678, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -46,7 +46,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625344057085559693, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_text
-      value: "\u041D\u043E\u0433\u0438 \u043A\u043E\u0441\u043C\u043E\u043D\u0430\u0432\u0442\u0430"
+      value: "\u041D\u043E\u0433\u0438 \u041A\u043E\u0441\u043C\u043E\u043D\u0430\u0432\u0442\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222816650138056194, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5478875972774254483, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_AnchoredPosition.x

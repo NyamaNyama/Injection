@@ -44,6 +44,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u0420\u0430\u0434\u0443\u0433\u0430 \u0432 \u0411\u0430\u043D\u043A\u0435"
       objectReference: {fileID: 0}
+    - target: {fileID: 4222816650138056194, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5478875972774254483, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.048

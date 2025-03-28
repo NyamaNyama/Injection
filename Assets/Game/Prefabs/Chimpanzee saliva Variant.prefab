@@ -42,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625344057085559693, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_text
-      value: "\u0421\u043B\u044E\u043D\u0430 \u0448\u0438\u043C\u043F\u0430\u043D\u0437\u0438\u043D\u0438"
+      value: "\u0421\u043B\u044E\u043D\u0430 \u0428\u0438\u043C\u043F\u0430\u043D\u0437\u0438\u043D\u0438"
       objectReference: {fileID: 0}
     - target: {fileID: 5478875972774254483, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_AnchoredPosition.x
