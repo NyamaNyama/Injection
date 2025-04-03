@@ -230,6 +230,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 18.9
       objectReference: {fileID: 0}
+    - target: {fileID: 1805837429904147367, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3480464950526786291, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
@@ -317,6 +321,14 @@ PrefabInstance:
     - target: {fileID: 3871578428069556595, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346868875506612852, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575674856134990942, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7645298053938144964, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
       propertyPath: m_text
