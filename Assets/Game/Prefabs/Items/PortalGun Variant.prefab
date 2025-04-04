@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7435259860539796291, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: df79ac9ab79c1c94384fdefa3e4de4d9, type: 2}
     - target: {fileID: 2692665190787482260, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_Name
       value: PortalGun Variant

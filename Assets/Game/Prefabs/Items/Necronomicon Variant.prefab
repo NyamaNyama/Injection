@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7435259860539796291, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: beb1a0d7ccd50a849b38add50e59d7d9, type: 2}
     - target: {fileID: 2692665190787482260, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_Name
       value: Necronomicon Variant

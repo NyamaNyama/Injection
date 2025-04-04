@@ -13,18 +13,24 @@ namespace Game.Scripts.ItemBehavior
         private Rigidbody2D _rb;
         private float _time;
         private SpriteRenderer _sprite;
+        private Draggable _drag;
 
         private void Start()
         {
             _sprite = GetComponent<SpriteRenderer>();
             _time = jumpCooldown;
             _rb = GetComponent<Rigidbody2D>();
+            _drag = GetComponent<Draggable>();
         }
 
         private void Update()
         {
             if (_time >= jumpCooldown)
             {
+                if (_drag.isDragging)
+                {
+                    _drag.StopDragging();
+                }
                 Jump();
                 _time -= _time;
             }

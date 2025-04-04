@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using Game.Scripts;
@@ -6,52 +7,62 @@ using UnityEngine.Serialization;
 public class Draggable : MonoBehaviour
 {
     private Vector3 offset;
-    private bool isDragging = false;
+    public bool isDragging { get; private set; }
     private float dragStartTime;
     public static bool dragPenaltyActive = false;
     private bool dragDisabled = false;
     public static bool invertedMouse = false;
     private static Draggable currentDraggable;
+    private Rigidbody2D rb;
     [HideInInspector] public bool wasDrop = false;
-    
+
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     private void OnMouseDown()
     {
         if (dragPenaltyActive && dragDisabled)
         {
             return;
         }
-        CursorManager.instance.SetDragCursor(true);
-        offset = gameObject.transform.position - GetMouseWorldPos();
-        isDragging = true;
-        dragStartTime = Time.time;
-        currentDraggable = this;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        offset = transform.position - GetMouseWorldPos();
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        
     }
 
     private void OnMouseDrag()
     {
-        if (isDragging && !dragDisabled)
+        CursorManager.instance.SetDragCursor(true);
+        isDragging = true;
+        dragStartTime = Time.time;
+        transform.position = GetMouseWorldPos() + offset;
+        WeakHands();
+    }
+
+    private void WeakHands()
+    {
+        if (dragPenaltyActive && Time.time - dragStartTime >= 5f)
         {
-            transform.position = GetMouseWorldPos() + offset;
-            if (dragPenaltyActive && Time.time - dragStartTime >= 5f)
-            {
-                StopDragging();
-            }
+            StopDragging();
         }
     }
-
+    
     private void OnMouseUp()
     {
-        wasDrop = true;
-        CursorManager.instance.SetDragCursor(false);
-        isDragging = false;
-        currentDraggable = null;
+        StopDragging();
     }
 
-    private void StopDragging()
+    public void StopDragging()
     {
+        rb.bodyType = RigidbodyType2D.Dynamic;
         isDragging = false;
-        dragDisabled = true;
-        StartCoroutine(EnableDragging());
+        //dragDisabled = true;
+        CursorManager.instance.SetDragCursor(false);
     }
 
     private IEnumerator EnableDragging()
@@ -63,14 +74,6 @@ public class Draggable : MonoBehaviour
     private Vector3 GetMouseWorldPos()
     {
         Vector3 mousePos = Input.mousePosition;
-
-        if (invertedMouse)
-        {
-            mousePos.x = Screen.width - mousePos.x;
-            mousePos.y = Screen.height - mousePos.y;
-        }
-
-        mousePos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mousePos);
     }
 

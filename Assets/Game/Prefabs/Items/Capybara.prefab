@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7435259860539796291, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 16abb865332a9494a94973c071703a2b, type: 2}
     - target: {fileID: 2692665190787482260, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}
       propertyPath: m_Name
       value: Capybara
@@ -155,6 +159,9 @@ MonoBehaviour:
   capybaraFall: {fileID: 5908836638248281128}
   heightForBreak: 3.5
   breakGlass: {fileID: 8300000, guid: a61f0c0571f4a7b4c80ce0e8e26412b0, type: 3}
+  table:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &5908836638248281128 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3814699609108426703, guid: d04626c84ad41ed44ac9465dc1a15173, type: 3}

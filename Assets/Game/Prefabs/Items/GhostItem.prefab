@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21fd86b193bcaea46bd6e84e2947fd24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 0}
+  itemData: {fileID: 11400000, guid: 299b4ae55c9fc7243a6d37aca24fddb1, type: 2}
   description: {fileID: 1128807876066467466}
   isLocked: 0
 --- !u!114 &3814699609108426703
