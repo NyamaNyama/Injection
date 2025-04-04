@@ -18,11 +18,11 @@ public class BuffSystem : MonoBehaviour
 
     private void Start()
     {
-        buffs.Add("Плохое зрение", ApplyBlurEffect);
-        buffs.Add("Розовые очки", ApplyPinkGlassesEffect);
-        buffs.Add("Слабые руки", ApplyWeakHandsEffect);
-        buffs.Add("Инвертированная мышь", ApplyInvertedMouseEffect);
-        buffs.Add("Затемнение", ApplyBlackoutEffect);
+        buffs.Add("РџР»РѕС…РѕРµ Р·СЂРµРЅРёРµ", ApplyBlurEffect);
+        buffs.Add("Р РѕР·РѕРІС‹Рµ РѕС‡РєРё", ApplyPinkGlassesEffect);
+        buffs.Add("РЎР»Р°Р±С‹Рµ СЂСѓРєРё", ApplyWeakHandsEffect);
+        buffs.Add("РРЅРІРµСЂС‚РёСЂРѕРІР°РЅРЅР°СЏ РјС‹С€СЊ", ApplyInvertedMouseEffect);
+        buffs.Add("Р—Р°С‚РµРјРЅРµРЅРёРµ", ApplyBlackoutEffect);
 
         applyBuffButton.onClick.AddListener(ApplySelectedBuff);
     }
