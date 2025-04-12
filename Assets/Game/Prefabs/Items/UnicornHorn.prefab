@@ -371,6 +371,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wasDrop: 0
+  tableLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &483335458461736854
 MonoBehaviour:
   m_ObjectHideFlags: 0

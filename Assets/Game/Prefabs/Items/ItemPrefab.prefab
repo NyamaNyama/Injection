@@ -192,7 +192,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ae5cb4980394843869574527685385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wasDrop: 0
+  tableLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  frequency: 8
+  damping: 1
+  jointMaxForce: 1000
+  maxCursorDistance: 3
 --- !u!1 &4222816650138056194
 GameObject:
   m_ObjectHideFlags: 0

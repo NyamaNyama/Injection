@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 57576050}
   - component: {fileID: 57576052}
   - component: {fileID: 57576051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CabibaraHeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,9 +496,9 @@ Transform:
   - {fileID: 1459485519}
   - {fileID: 1547080597}
   - {fileID: 1801050385}
-  - {fileID: 2041565417}
   - {fileID: 428755679}
   - {fileID: 746940052}
+  - {fileID: 152114929}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &141605536
@@ -591,6 +591,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!1 &152114928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152114929}
+  m_Layer: 0
+  m_Name: CollidersZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152114929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152114928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2041565417}
+  m_Father: {fileID: 133982093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &166621052
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 166621053}
   - component: {fileID: 166621054}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gomunkul_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218087426}
   - component: {fileID: 218087427}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MehKapibara_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1327,7 +1359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 384773571}
   - component: {fileID: 384773572}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gomunkul_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1550,7 +1582,7 @@ GameObject:
   - component: {fileID: 428755681}
   - component: {fileID: 428755680}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CraftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1822,7 +1854,6 @@ GameObject:
   - component: {fileID: 608441070}
   - component: {fileID: 608441069}
   - component: {fileID: 608441067}
-  - component: {fileID: 608441068}
   m_Layer: 0
   m_Name: LeftTP
   m_TagString: Untagged
@@ -1831,19 +1862,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &608441067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608441066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b62c84e16ce381a4da90e806fc25996e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentItem: {fileID: 0}
---- !u!114 &608441068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2065,7 +2083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 634852208}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2233,7 +2251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677534091}
   - component: {fileID: 677534092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MantiaStrah_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2320,7 +2338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 700832233}
   - component: {fileID: 700832234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStone_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2408,7 +2426,7 @@ GameObject:
   - component: {fileID: 718561377}
   - component: {fileID: 718561376}
   - component: {fileID: 718561375}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u041F\u043E\u043B\u043A\u0430_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2540,7 +2558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746940052}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shelves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2998,7 +3016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 838110993}
   - component: {fileID: 838110994}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStone_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3085,7 +3103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 840306043}
   - component: {fileID: 840306044}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStone_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3431,7 +3449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 921395552}
   - component: {fileID: 921395553}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MehKapibara_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3734,7 +3752,7 @@ GameObject:
   - component: {fileID: 983574749}
   - component: {fileID: 983574748}
   - component: {fileID: 983574747}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u041F\u043E\u043B\u043A\u0430_0 (2)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3993,7 +4011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1047161779}
   - component: {fileID: 1047161780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MehKapibara_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4244,7 +4262,6 @@ GameObject:
   - component: {fileID: 1070333800}
   - component: {fileID: 1070333799}
   - component: {fileID: 1070333797}
-  - component: {fileID: 1070333798}
   m_Layer: 0
   m_Name: RightTP
   m_TagString: Untagged
@@ -4253,19 +4270,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1070333797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070333796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b62c84e16ce381a4da90e806fc25996e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentItem: {fileID: 0}
---- !u!114 &1070333798
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4695,7 +4699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1259623248}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4728,7 +4732,7 @@ GameObject:
   - component: {fileID: 1266015057}
   - component: {fileID: 1266015059}
   - component: {fileID: 1266015058}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GhostHeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4825,7 +4829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1302901813}
   - component: {fileID: 1302901814}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MantiaStrah_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4913,7 +4917,7 @@ GameObject:
   - component: {fileID: 1323295771}
   - component: {fileID: 1323295770}
   - component: {fileID: 1323295769}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u041F\u043E\u043B\u043A\u0430_0 (1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5046,7 +5050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370444055}
   - component: {fileID: 1370444056}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MantiaStrah_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5133,7 +5137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403701615}
   - component: {fileID: 1403701616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStone_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5221,7 +5225,7 @@ GameObject:
   - component: {fileID: 1408112535}
   - component: {fileID: 1408112534}
   - component: {fileID: 1408112533}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u041F\u043E\u043B\u043A\u0430_0 (3)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5402,7 +5406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1484320281}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5575,6 +5579,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HeadCrab
       objectReference: {fileID: 0}
+    - target: {fileID: 2692665190787482260, guid: ca6b5f4a671a88a4ab7c9a8616443700, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814699609108426703, guid: ca6b5f4a671a88a4ab7c9a8616443700, type: 3}
+      propertyPath: maxCursorDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6387479245842989679, guid: ca6b5f4a671a88a4ab7c9a8616443700, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4433316
@@ -5631,7 +5643,7 @@ GameObject:
   - component: {fileID: 1568193067}
   - component: {fileID: 1568193069}
   - component: {fileID: 1568193068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStoneHeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6219,7 +6231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794832487}
   - component: {fileID: 1794832488}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MantiaStrah_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6307,7 +6319,7 @@ GameObject:
   - component: {fileID: 1801050385}
   - component: {fileID: 1801050384}
   m_Layer: 0
-  m_Name: "\u0424\u043E\u043D_0"
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6944,7 +6956,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 3.2831085}
+  m_Offset: {x: 0, y: 3.7820754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6954,7 +6966,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 50, y: 10.837196}
+  m_Size: {x: 50, y: 14.641797}
   m_EdgeRadius: 0
 --- !u!4 &2041565417
 Transform:
@@ -6969,7 +6981,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 133982093}
+  m_Father: {fileID: 152114929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067132141
 GameObject:
@@ -6982,7 +6994,7 @@ GameObject:
   - component: {fileID: 2067132142}
   - component: {fileID: 2067132144}
   - component: {fileID: 2067132143}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GomunculHeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7078,7 +7090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2070104026}
   - component: {fileID: 2070104027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gomunkul_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7300,7 +7312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2135181716}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

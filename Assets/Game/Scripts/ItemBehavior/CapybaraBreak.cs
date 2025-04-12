@@ -31,7 +31,6 @@ namespace Game.Scripts.ItemBehavior
         {
             if (!capybaraFall.isDragging )
             {
-                print("Гавнеж");
                 if (_currentHeight - transform.position.y >= heightForBreak)
                 {
                     SoundFXManager.instance.PlaySoundFXClip(breakGlass,transform);
