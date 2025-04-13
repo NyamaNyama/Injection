@@ -68,7 +68,7 @@ public class Draggable : MonoBehaviour
 
     private void StartDragging()
     {
-        
+        _rb.mass = 0.01f;
         _rb.gravityScale = 0;
         _rb.linearVelocity = Vector2.zero;
         
@@ -91,7 +91,8 @@ public class Draggable : MonoBehaviour
             Destroy(_targetJoint);
             _targetJoint = null;
         }
-        
+
+        _rb.mass = 1;
         _rb.gravityScale = 1;
         _rb.linearVelocity = Vector2.zero;
         _rb.angularVelocity = 0f;
@@ -103,6 +104,7 @@ public class Draggable : MonoBehaviour
     private Vector2 GetMouseWorldPos()
     {
         Vector3 mousePos = Input.mousePosition;
+        print(_mainCam.ScreenToWorldPoint(mousePos));
         return _mainCam.ScreenToWorldPoint(mousePos);
     }
     

@@ -1826,6 +1826,7 @@ MonoBehaviour:
   moveSpeed: 5
   screenEdgeBuffer: 0.1
   mainCamera: {fileID: 519420031}
+  xBorder: 11
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5456,7 +5457,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 29603c2dc8b48c64bbe758c733be4fb8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
