@@ -199,7 +199,7 @@ MonoBehaviour:
   frequency: 20
   damping: 1
   jointMaxForce: 10000
-  maxCursorDistance: 0
+  maxCursorDistance: 3
 --- !u!114 &-4332799190717763069
 MonoBehaviour:
   m_ObjectHideFlags: 0
