@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 57576050}
   - component: {fileID: 57576052}
   - component: {fileID: 57576051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CabibaraHeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ Transform:
   - {fileID: 921395552}
   - {fileID: 1047161779}
   - {fileID: 1484320281}
-  m_Father: {fileID: 133982093}
+  m_Father: {fileID: 746940052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &57576051
 MonoBehaviour:
@@ -496,12 +496,9 @@ Transform:
   - {fileID: 1459485519}
   - {fileID: 1547080597}
   - {fileID: 1801050385}
-  - {fileID: 1568193067}
-  - {fileID: 2067132142}
-  - {fileID: 57576050}
-  - {fileID: 1266015057}
-  - {fileID: 2041565417}
   - {fileID: 428755679}
+  - {fileID: 746940052}
+  - {fileID: 152114929}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &141605536
@@ -594,6 +591,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!1 &152114928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152114929}
+  m_Layer: 0
+  m_Name: CollidersZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152114929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152114928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2041565417}
+  m_Father: {fileID: 133982093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &166621052
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 166621053}
   - component: {fileID: 166621054}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gomunkul_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,7 +853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218087426}
   - component: {fileID: 218087427}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MehKapibara_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1330,7 +1359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 384773571}
   - component: {fileID: 384773572}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gomunkul_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1553,7 +1582,7 @@ GameObject:
   - component: {fileID: 428755681}
   - component: {fileID: 428755680}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CraftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1725,7 +1754,7 @@ Camera:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1751,7 +1780,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1776,7 +1805,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1797,6 +1826,7 @@ MonoBehaviour:
   moveSpeed: 5
   screenEdgeBuffer: 0.1
   mainCamera: {fileID: 519420031}
+  xBorder: 11
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,7 +1855,6 @@ GameObject:
   - component: {fileID: 608441070}
   - component: {fileID: 608441069}
   - component: {fileID: 608441067}
-  - component: {fileID: 608441068}
   m_Layer: 0
   m_Name: LeftTP
   m_TagString: Untagged
@@ -1834,19 +1863,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &608441067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608441066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b62c84e16ce381a4da90e806fc25996e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentItem: {fileID: 0}
---- !u!114 &608441068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1969,7 +1985,7 @@ Transform:
   m_GameObject: {fileID: 608441066}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.7348, y: 2.85, z: 0}
+  m_LocalPosition: {x: -19.7348, y: 2.4, z: 0}
   m_LocalScale: {x: 1.0277011, y: 1.2540984, z: 0.8941}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2068,7 +2084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 634852208}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2236,7 +2252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677534091}
   - component: {fileID: 677534092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MantiaStrah_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2323,7 +2339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 700832233}
   - component: {fileID: 700832234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStone_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2411,7 +2427,7 @@ GameObject:
   - component: {fileID: 718561377}
   - component: {fileID: 718561376}
   - component: {fileID: 718561375}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u041F\u043E\u043B\u043A\u0430_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2527,12 +2543,51 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718561374}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 2.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10, y: 2.5, z: 10}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 746940052}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &746940051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 746940052}
+  m_Layer: 3
+  m_Name: Shelves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &746940052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746940051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 718561377}
+  - {fileID: 1323295771}
+  - {fileID: 983574749}
+  - {fileID: 1408112535}
+  - {fileID: 1568193067}
+  - {fileID: 2067132142}
+  - {fileID: 57576050}
+  - {fileID: 1266015057}
+  m_Father: {fileID: 133982093}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &775522878
 GameObject:
@@ -2962,7 +3017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 838110993}
   - component: {fileID: 838110994}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStone_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3049,7 +3104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 840306043}
   - component: {fileID: 840306044}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStone_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3395,7 +3450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 921395552}
   - component: {fileID: 921395553}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MehKapibara_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3698,7 +3753,7 @@ GameObject:
   - component: {fileID: 983574749}
   - component: {fileID: 983574748}
   - component: {fileID: 983574747}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u041F\u043E\u043B\u043A\u0430_0 (2)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3814,12 +3869,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983574746}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10, y: 0, z: 10}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.36643}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 746940052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1000608868
 GameObject:
@@ -3957,7 +4012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1047161779}
   - component: {fileID: 1047161780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MehKapibara_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4208,7 +4263,6 @@ GameObject:
   - component: {fileID: 1070333800}
   - component: {fileID: 1070333799}
   - component: {fileID: 1070333797}
-  - component: {fileID: 1070333798}
   m_Layer: 0
   m_Name: RightTP
   m_TagString: Untagged
@@ -4217,19 +4271,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1070333797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070333796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b62c84e16ce381a4da90e806fc25996e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentItem: {fileID: 0}
---- !u!114 &1070333798
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4352,7 +4393,7 @@ Transform:
   m_GameObject: {fileID: 1070333796}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.54, y: 2.85, z: 0}
+  m_LocalPosition: {x: 19.54, y: 2.4000003, z: 0}
   m_LocalScale: {x: 1.027701, y: 1.254098, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4659,7 +4700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1259623248}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4692,7 +4733,7 @@ GameObject:
   - component: {fileID: 1266015057}
   - component: {fileID: 1266015059}
   - component: {fileID: 1266015058}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GhostHeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4717,7 +4758,7 @@ Transform:
   - {fileID: 1794832487}
   - {fileID: 1370444055}
   - {fileID: 2135181716}
-  m_Father: {fileID: 133982093}
+  m_Father: {fileID: 746940052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1266015058
 MonoBehaviour:
@@ -4789,7 +4830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1302901813}
   - component: {fileID: 1302901814}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MantiaStrah_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4877,7 +4918,7 @@ GameObject:
   - component: {fileID: 1323295771}
   - component: {fileID: 1323295770}
   - component: {fileID: 1323295769}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u041F\u043E\u043B\u043A\u0430_0 (1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4993,12 +5034,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323295768}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17, y: 2.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17, y: 2.5, z: 10}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 746940052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1370444054
 GameObject:
@@ -5010,7 +5051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370444055}
   - component: {fileID: 1370444056}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MantiaStrah_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5097,7 +5138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403701615}
   - component: {fileID: 1403701616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStone_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5185,7 +5226,7 @@ GameObject:
   - component: {fileID: 1408112535}
   - component: {fileID: 1408112534}
   - component: {fileID: 1408112533}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u041F\u043E\u043B\u043A\u0430_0 (3)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5301,12 +5342,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408112532}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17, y: 0, z: 10}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 746940052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1459485517
 GameObject:
@@ -5366,7 +5407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1484320281}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5416,7 +5457,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 29603c2dc8b48c64bbe758c733be4fb8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5538,7 +5579,7 @@ GameObject:
   - component: {fileID: 1568193067}
   - component: {fileID: 1568193069}
   - component: {fileID: 1568193068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MoonStoneHeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5563,7 +5604,7 @@ Transform:
   - {fileID: 1403701615}
   - {fileID: 840306043}
   - {fileID: 634852208}
-  m_Father: {fileID: 133982093}
+  m_Father: {fileID: 746940052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1568193068
 MonoBehaviour:
@@ -6126,7 +6167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794832487}
   - component: {fileID: 1794832488}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MantiaStrah_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6214,7 +6255,7 @@ GameObject:
   - component: {fileID: 1801050385}
   - component: {fileID: 1801050384}
   m_Layer: 0
-  m_Name: "\u0424\u043E\u043D_0"
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6284,8 +6325,8 @@ Transform:
   m_GameObject: {fileID: 1801050383}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 10}
+  m_LocalScale: {x: 1, y: 1.308636, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 133982093}
@@ -6603,7 +6644,7 @@ Transform:
   m_GameObject: {fileID: 1994939721}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1494253, y: 3.0841956, z: 0}
+  m_LocalPosition: {x: -1.1494253, y: 2.634196, z: 0}
   m_LocalScale: {x: 1.1494253, y: 1.4026377, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6851,7 +6892,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 3.337501}
+  m_Offset: {x: 0, y: 3.7820754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6861,7 +6902,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 50, y: 10.728412}
+  m_Size: {x: 50, y: 14.641797}
   m_EdgeRadius: 0
 --- !u!4 &2041565417
 Transform:
@@ -6876,7 +6917,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 133982093}
+  m_Father: {fileID: 152114929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067132141
 GameObject:
@@ -6889,7 +6930,7 @@ GameObject:
   - component: {fileID: 2067132142}
   - component: {fileID: 2067132144}
   - component: {fileID: 2067132143}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GomunculHeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6913,7 +6954,7 @@ Transform:
   - {fileID: 2070104026}
   - {fileID: 384773571}
   - {fileID: 1259623248}
-  m_Father: {fileID: 133982093}
+  m_Father: {fileID: 746940052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2067132143
 MonoBehaviour:
@@ -6985,7 +7026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2070104026}
   - component: {fileID: 2070104027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gomunkul_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7207,7 +7248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2135181716}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7234,7 +7275,3 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 133982093}
-  - {fileID: 718561377}
-  - {fileID: 1323295771}
-  - {fileID: 983574749}
-  - {fileID: 1408112535}

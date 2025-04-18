@@ -6,10 +6,10 @@ using UnityEngine.EventSystems;
 public class ItemObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private ItemData itemData;
-    [SerializeField] private GameObject description; 
+    [SerializeField] private GameObject description;
 
     public bool isLocked = false;
-    
+
 
     public ItemData GetItemData()
     {
@@ -37,4 +37,5 @@ public class ItemObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         if (description != null)
             description.SetActive(false);
     }
+    
 }

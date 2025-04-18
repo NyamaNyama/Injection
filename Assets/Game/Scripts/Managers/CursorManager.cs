@@ -22,6 +22,8 @@ namespace Game.Scripts
             {
                 Destroy(gameObject);
             }
+
+            Cursor.lockState = CursorLockMode.Confined;
         }
 
         private void Start()

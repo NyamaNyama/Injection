@@ -118,7 +118,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &3256994657853095678
 BoxCollider2D:
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21fd86b193bcaea46bd6e84e2947fd24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 0}
+  itemData: {fileID: 11400000, guid: a943f18806373d4419f720244eddf519, type: 2}
   description: {fileID: 6860255708119181719}
   isLocked: 0
 --- !u!114 &3814699609108426703
@@ -193,7 +193,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ae5cb4980394843869574527685385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wasDrop: 0
+  tableLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  frequency: 20
+  damping: 1
+  jointMaxForce: 10000
+  maxCursorDistance: 0
 --- !u!114 &-4332799190717763069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +235,10 @@ PrefabInstance:
     - target: {fileID: 366289691255809128, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
       propertyPath: m_fontSize
       value: 18.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805837429904147367, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3480464950526786291, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
       propertyPath: m_Name
@@ -317,6 +327,14 @@ PrefabInstance:
     - target: {fileID: 3871578428069556595, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346868875506612852, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575674856134990942, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7645298053938144964, guid: 9b15cee80c9cc9143a7e12c0978d7a86, type: 3}
       propertyPath: m_text

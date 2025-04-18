@@ -35,6 +35,6 @@ public class Timer : MonoBehaviour
 
     void TimerEnd()
     {
-        // Debug.Log("Время вышло!"); 
+        // Debug.Log("Р’СЂРµРјСЏ РІС‹С€Р»Рѕ!"); 
     }
 }
