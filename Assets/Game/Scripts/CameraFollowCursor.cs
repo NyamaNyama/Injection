@@ -7,7 +7,7 @@ public class CameraFollowCursor : MonoBehaviour
     public Camera mainCamera;
     [SerializeField] private float xBorder;
 
-    private void Update()
+    private void FixedUpdate()
     {
         Vector3 cursorPosition = Input.mousePosition;
 

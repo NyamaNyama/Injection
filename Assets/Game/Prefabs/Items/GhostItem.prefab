@@ -547,7 +547,7 @@ MonoBehaviour:
   tableLayer:
     serializedVersion: 2
     m_Bits: 8
-  frequency: 8
+  frequency: 20
   damping: 1
   jointMaxForce: 10000
   maxCursorDistance: 0

@@ -19,14 +19,16 @@ public class Draggable : MonoBehaviour
     private Rigidbody2D _rb;
     
     private TargetJoint2D _targetJoint;
-    [SerializeField][Range(0.1f, 50f)] private float frequency = 8f;
-    [SerializeField][Range(0f, 1f)] private float damping = 1f;
-    [SerializeField] private float jointMaxForce = 1000f;
+    [SerializeField] private float frequency ;
+    [SerializeField][Range(0f, 1f)] private float damping;
+    [SerializeField] private float jointMaxForce;
 
     [SerializeField] private float maxCursorDistance;
     private float _colliderCheckRadius;
 
     
+
+    private Vector2 _prevPos;
     private void Awake()
     {
         _mainCam = Camera.main;
@@ -34,7 +36,25 @@ public class Draggable : MonoBehaviour
         Collider2D collider = GetComponent<Collider2D>();
         _colliderCheckRadius = Vector2.Distance(collider.bounds.max, collider.bounds.min) / 2;
     }
-    
+
+    private void FixedUpdate()
+    {
+        if (!isDragging || _targetJoint == null) return;
+        
+        Vector2 curr = GetMouseWorldPos();
+        
+        _targetJoint.target += curr - _prevPos;
+        
+        if (Vector2.Distance(transform.position, curr) >= maxCursorDistance)
+        {
+            if (Physics2D.OverlapCircle(curr, _colliderCheckRadius, tableLayer))
+            {
+                _rb.MovePosition(curr);
+            }
+        }
+        _prevPos = curr;
+    }
+
 
     private void OnMouseDown()
     {
@@ -47,16 +67,6 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        if (!isDragging || _targetJoint == null) return;
-        _targetJoint.target = GetMouseWorldPos();
-        if (Vector2.Distance(transform.position, GetMouseWorldPos()) >= maxCursorDistance)
-        {
-            if (Physics2D.OverlapCircle(GetMouseWorldPos(), _colliderCheckRadius, tableLayer))
-            {
-                _rb.MovePosition(GetMouseWorldPos());
-            }
-        }
-        
         WeakHands();
     }
     
@@ -71,17 +81,22 @@ public class Draggable : MonoBehaviour
         _rb.mass = 0.01f;
         _rb.gravityScale = 0;
         _rb.linearVelocity = Vector2.zero;
+
+        _prevPos = GetMouseWorldPos();
         
         _targetJoint = gameObject.AddComponent<TargetJoint2D>();
         _targetJoint.autoConfigureTarget = false;
         _targetJoint.dampingRatio = damping;
         _targetJoint.frequency = frequency;
-        _targetJoint.target = GetMouseWorldPos();
+        _targetJoint.target = _prevPos;
         _targetJoint.maxForce = jointMaxForce;
+        
+        
         
         CursorManager.instance.SetDragCursor(true);
         isDragging = true;
         dragStartTime = Time.time;
+        
     }
 
     public void StopDragging()
@@ -104,7 +119,6 @@ public class Draggable : MonoBehaviour
     private Vector2 GetMouseWorldPos()
     {
         Vector3 mousePos = Input.mousePosition;
-        print(_mainCam.ScreenToWorldPoint(mousePos));
         return _mainCam.ScreenToWorldPoint(mousePos);
     }
     
